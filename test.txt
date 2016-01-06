@@ -1,0 +1,52 @@
+gcc -std=c89 -ansi -Wall -pedantic -Werror -D_DEBUG -g -o dlist_test dlist_test.c dlist.c dlist.h -I.
+
+FILE:dlist_test.c, func:main, LINE:16 
+
+FILE:dlist.c, func:DListCreate, LINE:47 
+sizeof(dlist_t):48
+sizeof(dl_ptr):8
+
+FILE:dlist_test.c, func:main, LINE:21 
+count:0
+
+FILE:dlist_test.c, func:main, LINE:26 
+DListIsEmpty:1
+
+FILE:dlist_test.c, func:main, LINE:30 
+DListBegin:(nil)
+DListIsEmpty:1
+
+FILE:dlist_test.c, func:main, LINE:35 
+DListEnd:0x2183028
+
+FILE:dlist_test.c, func:main, LINE:40 
+&dn_ptr1:0x7ffcd57d3708
+DListIsEmpty:0
+count:1
+
+FILE:dlist_test.c, func:main, LINE:50 
+&dn_ptr2:0x7ffcd57d3710
+DListIsEmpty:0
+count:2
+
+FILE:dlist_test.c, func:main, LINE:60 
+&dn_ptr3:0x7ffcd57d3718
+DListIsEmpty:0
+count:3
+
+FILE:dlist_test.c, func:main, LINE:68 
+DListNext:0x2183090
+
+FILE:dlist_test.c, func:main, LINE:72 
+DListPrev:0x2183050
+
+FILE:dlist_test.c, func:main, LINE:76 
+DListIsSameIter(dn_ptr1, dn_ptr2):0
+DListIsSameIter(dn_ptr1, dn_ptr1):1
+
+FILE:dlist_test.c, func:main, LINE:81 
+data in dn_ptr1:1
+data in dn_ptr2:2
+data in dn_ptr3:3
+
+FILE:dlist_test.c, func:main, LINE:87 
